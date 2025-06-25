@@ -1,14 +1,14 @@
-(define twice
-  (lambda (x)
-    (+ x x)))
+(DEFINE TWICE
+  (LAMBDA (X)
+    (+ X X)))
 
-(display (twice (twice 1)))
+(DISPLAY (TWICE (TWICE 1)))
 
-(define fak
-  (lambda (n)
-    (cond ((eq? n 1)
+(DEFINE FAK
+  (LAMBDA (N)
+    (COND ((EQ? N 1)
 	   1)
-	  (t
-	   (* n (fak (- n 1)))))))
+	  (T
+	   (* N (FAK (- N 1)))))))
 
-(display (fak 5))
+(DISPLAY (FAK 5))
